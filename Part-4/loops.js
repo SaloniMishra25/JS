@@ -46,3 +46,26 @@ while (n <= 5) {
   }
   n++;
 }
+
+//for of loop
+console.log("--------------");
+let student = ["Saloni", "jahnvi", "Aashi"];
+
+for (let name of student) {
+  console.log(name);
+}
+
+// nested for of loop
+console.log("--------------");
+let fruits = [
+  ["Apple", "Banana", "Mango"],
+  ["Orange", "Pineapple", "Grapes"],
+  ["Strawberry", "Blueberry", "Raspberry"],
+];
+
+for (let fruitList of fruits) {
+  console.log("Fruit List:", fruitList);
+  for (let fruit of fruitList) {
+    console.log(fruit);
+  }
+}
